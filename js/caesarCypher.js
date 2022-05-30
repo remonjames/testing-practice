@@ -2,7 +2,7 @@ const caesarCypher = (str, key) => {
   const upperKey = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const lowerKey = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
 
-  if (key > 25) {
+  if (key < 0 || key > 25) {
     return undefined;
   }
 

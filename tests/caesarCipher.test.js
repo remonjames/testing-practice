@@ -15,3 +15,7 @@ test('("Don\'t falter!", 3) becomes "Epo\'u gbmufs!"', () => {
 test('("key is greater than 25"', () => {
   expect(caesarCypher('invalid key', 27)).toBeUndefined();
 });
+
+test('("key is less than 0"', () => {
+  expect(caesarCypher('invalid key', -5)).toBeUndefined();
+});
